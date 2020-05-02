@@ -1,0 +1,501 @@
+[
+    {
+        "name": "alchemy/binary-driver",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/alchemy-fr/BinaryDriver.git",
+            "reference": "f85de179bac04b4d81082545283d487d1fc0d8df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/alchemy-fr/BinaryDriver/zipball/f85de179bac04b4d81082545283d487d1fc0d8df",
+            "reference": "f85de179bac04b4d81082545283d487d1fc0d8df",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "^2.0|^1.0",
+            "monolog/monolog": "^1.3",
+            "php": "~7.0",
+            "psr/log": "^1.0",
+            "symfony/process": "^2.0|^3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-04-19T12:56:00+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Alchemy": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Romain Neutron",
+                "email": "imprec@gmail.com",
+                "homepage": "http://www.lickmychip.com/"
+            },
+            {
+                "name": "Phraseanet Team",
+                "email": "info@alchemy.fr",
+                "homepage": "http://www.phraseanet.com/"
+            },
+            {
+                "name": "Nicolas Le Goff",
+                "email": "legoff.n@gmail.com"
+            }
+        ],
+        "description": "A set of tools to build binary drivers",
+        "keywords": [
+            "binary",
+            "driver"
+        ]
+    },
+    {
+        "name": "evenement/evenement",
+        "version": "v2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/igorw/evenement.git",
+            "reference": "6ba9a777870ab49f417e703229d53931ed40fd7a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/igorw/evenement/zipball/6ba9a777870ab49f417e703229d53931ed40fd7a",
+            "reference": "6ba9a777870ab49f417e703229d53931ed40fd7a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.0||^5.7||^4.8.35"
+        },
+        "time": "2017-07-17T17:39:19+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Evenement": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "Événement is a very simple event dispatching library for PHP",
+        "keywords": [
+            "event-dispatcher",
+            "event-emitter"
+        ]
+    },
+    {
+        "name": "monolog/monolog",
+        "version": "1.25.3",
+        "version_normalized": "1.25.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/monolog.git",
+            "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fa82921994db851a8becaf3787a9e73c5976b6f1",
+            "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "psr/log": "~1.0"
+        },
+        "provide": {
+            "psr/log-implementation": "1.0.0"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+            "doctrine/couchdb": "~1.0@dev",
+            "graylog2/gelf-php": "~1.0",
+            "jakub-onderka/php-parallel-lint": "0.9",
+            "php-amqplib/php-amqplib": "~2.4",
+            "php-console/php-console": "^3.1.3",
+            "phpunit/phpunit": "~4.5",
+            "phpunit/phpunit-mock-objects": "2.3.0",
+            "ruflin/elastica": ">=0.90 <3.0",
+            "sentry/sentry": "^0.13",
+            "swiftmailer/swiftmailer": "^5.3|^6.0"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+            "ext-mongo": "Allow sending log messages to a MongoDB server",
+            "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+            "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+            "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+            "php-console/php-console": "Allow sending log messages to Google Chrome",
+            "rollbar/rollbar": "Allow sending log messages to Rollbar",
+            "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+            "sentry/sentry": "Allow sending log messages to a Sentry server"
+        },
+        "time": "2019-12-20T14:15:16+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Monolog\\": "src/Monolog"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+        "homepage": "http://github.com/Seldaek/monolog",
+        "keywords": [
+            "log",
+            "logging",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "pclzip/pclzip",
+        "version": "2.8.2",
+        "version_normalized": "2.8.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ivanlanin/pclzip.git",
+            "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ivanlanin/pclzip/zipball/19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+            "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+            "shasum": ""
+        },
+        "time": "2014-06-05T11:42:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "pclzip.lib.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Vincent Blavet"
+            }
+        ],
+        "description": "A PHP library that offers compression and extraction functions for Zip formatted archives",
+        "homepage": "http://www.phpconcept.net/pclzip",
+        "keywords": [
+            "php",
+            "zip"
+        ]
+    },
+    {
+        "name": "php-unoconv/php-unoconv",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/alchemy-fr/PHP-Unoconv.git",
+            "reference": "8b7762ac8990d19a9ac42ea05d4a650fc8c15be9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/alchemy-fr/PHP-Unoconv/zipball/8b7762ac8990d19a9ac42ea05d4a650fc8c15be9",
+            "reference": "8b7762ac8990d19a9ac42ea05d4a650fc8c15be9",
+            "shasum": ""
+        },
+        "require": {
+            "alchemy/binary-driver": "~4.1",
+            "php": "~7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0",
+            "silex/silex": "~2.0"
+        },
+        "time": "2018-04-23T11:47:46+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Unoconv": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Romain Neutron",
+                "email": "imprec@gmail.com",
+                "homepage": "http://www.lickmychip.com/"
+            },
+            {
+                "name": "Phraseanet Team",
+                "email": "info@alchemy.fr",
+                "homepage": "http://www.phraseanet.com/"
+            }
+        ],
+        "description": "Unoconv PHP, an Object Oriented library for easy file conversion with LibreOffice's unoconv",
+        "keywords": [
+            "unoconv"
+        ]
+    },
+    {
+        "name": "phpoffice/common",
+        "version": "0.2.9",
+        "version_normalized": "0.2.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPOffice/Common.git",
+            "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPOffice/Common/zipball/edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
+            "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
+            "shasum": ""
+        },
+        "require": {
+            "pclzip/pclzip": "^2.8",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phploc/phploc": "2.*",
+            "phpmd/phpmd": "2.*",
+            "phpunit/phpunit": "^4.8.36 || ^7.0",
+            "sebastian/phpcpd": "2.*",
+            "squizlabs/php_codesniffer": "2.*"
+        },
+        "time": "2018-07-13T14:12:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpOffice\\Common\\": "src/Common/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Mark Baker"
+            },
+            {
+                "name": "Franck Lefevre",
+                "homepage": "http://rootslabs.net"
+            }
+        ],
+        "description": "PHPOffice Common",
+        "homepage": "http://phpoffice.github.io",
+        "keywords": [
+            "common",
+            "component",
+            "office",
+            "php"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2020-03-23T09:12:05+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "symfony/process",
+        "version": "v3.4.40",
+        "version_normalized": "3.4.40.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/process.git",
+            "reference": "f5104c9dcbc2cfad45d01d5150c1da9836967271"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/process/zipball/f5104c9dcbc2cfad45d01d5150c1da9836967271",
+            "reference": "f5104c9dcbc2cfad45d01d5150c1da9836967271",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2020-04-12T14:33:46+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Process\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "zendframework/zend-escaper",
+        "version": "2.6.1",
+        "version_normalized": "2.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-escaper.git",
+            "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
+            "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2019-09-05T20:03:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6.x-dev",
+                "dev-develop": "2.7.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Escaper\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+        "keywords": [
+            "ZendFramework",
+            "escaper",
+            "zf"
+        ],
+        "abandoned": "laminas/laminas-escaper"
+    }
+]
