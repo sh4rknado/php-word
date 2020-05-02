@@ -5,7 +5,6 @@ require_once "../vendor/autoload.php";
 
 use PhpOffice\PhpWord\Converter\Converter;
 
-
 $converter = new Converter();
 
 /**
