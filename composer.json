@@ -37,5 +37,11 @@
         "branch-alias": {
             "dev-develop": "0.18-dev"
         }
-    }
+    },
+    "repositories": [
+       {
+            "type": "vcs",
+            "url": "https://github.com/sh4rknado/php-word"
+       }
+    ]
 }
