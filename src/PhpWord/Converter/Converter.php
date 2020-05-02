@@ -23,7 +23,7 @@ class Converter {
      */
     public function docxToPdf($filename, $output) {
 
-        $binary = "/usr/bin/unoconv";
+        $binary = "/usr/bin/sudo /usr/bin/unoconv";
 
         $unoconv = Unoconv::create(array(
             'timeout'          => 42,
