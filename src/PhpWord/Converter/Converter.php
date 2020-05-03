@@ -20,17 +20,20 @@ class Converter {
     /**
      * @param $filename
      * @param $output
+     * @throws Exception
      */
     public function docxToPdf($filename, $output) {
+        try {
+            $binary = "/usr/bin/unoconv";
+            $unoconv = Unoconv::create(array(
+                'timeout'          => 42,
+                'unoconv.binaries' => $binary,
+            ));
 
-        $binary = "/usr/bin/unoconv";
+            $unoconv->transcode($filename, 'pdf', $output);
+        }
+        catch (Exception $e) { throw new Exception('Impossible de convertir en PDF : ' . $e); }
 
-        $unoconv = Unoconv::create(array(
-            'timeout'          => 42,
-            'unoconv.binaries' => $binary,
-        ));
-
-        $unoconv->transcode($filename, 'pdf', $output);
     }
 
 
